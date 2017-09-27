@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> calculation of two numbers </title>
+    
+</head>
+
+<body bgcolor ="blanchedalmond">
+    <form> 
+        <center>
+            <h1>
+                <font color="brown">CALCULATOR</font>
+            </h1>
+            1st Number : <input type="text" id="firstNumber" /><br><br> 2nd Number: <input type="text" id="secondNumber"
+            /><br><br>
+            <input type="button" onClick="additionBy()" Value="Addition" style="background-color:aquamarine" />
+            <input type="button" onClick="subtractionBy()" Value="subtraction" style="background-color:tomato" />
+            <input type="button" onClick="multiplyBy()" Value="Multiply" style="background-color:#A1DDDD" />
+            <input type="button" onClick="divideBy()" Value="Divide" style="background-color:bisque" />
+    </form>
+    <p>The Result is : <br>
+        <h3><span id="result"></span></h3>
+    </p>
+    </center>
+
+</body>
+<script>
+    function additionBy() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = Number(num1) + Number(num2);
+    }
+    function subtractionBy() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 - num2;
+    }
+
+    function multiplyBy() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+    }
+
+    function divideBy() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 / num2;
+    }
+
+</script>
+
+</html>
